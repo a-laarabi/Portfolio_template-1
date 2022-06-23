@@ -166,6 +166,7 @@ h2 {
 
 .popup-info {
   display: flex;
+  flex-direction: column;
   align-items: start;
   justify-content: start;
   width: 100%;
@@ -178,6 +179,8 @@ h2 {
   margin: 0;
   padding: 0;
   margin-left: -5px;
+  max-height: 150px;
+  overflow: hidden;
 }
 
 .inside_popup-info {
@@ -185,7 +188,7 @@ h2 {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  padding-left: 20px;
+  order: 1;
 }
 
 .btn-group {
@@ -198,6 +201,12 @@ h2 {
 .inside_popup-info br {
   width: 30px;
   height: 50px;
+}
+
+.buttons{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
 .seperator {
@@ -251,6 +260,10 @@ h2 {
   background-color: #fff;
   border: 2px solid #396df2;
   margin-left: 16px;
+}
+
+.inside_popup-info .see {
+  margin-left: 0;
 }
 
 /* ### About Myself ### */
@@ -458,6 +471,14 @@ textarea {
   }
 
   /* ### Work ### */
+  .info {
+    overflow: auto;
+  }
+
+  .popup-info {
+    flex-direction: row;
+  }
+  
   .left {
     float: left;
   }
@@ -661,9 +682,10 @@ textarea {
   border: 1px solid #ebecf0;
   padding: 16px;
   background-color: #fff;
-  margin-top: 60%;
+  margin-top: 350px;
   padding-bottom: 20px;
   margin-bottom: 20px;
+  flex-direction: column;
 }
 
 .projectPopup .pic {
