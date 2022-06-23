@@ -96,13 +96,13 @@ for (let i = 0; i < buttonWork.length; i += 1) {
 
     const projectText = document.querySelector('.info');
     projectText.textContent = workObject[i].popupinfo;
-  
+
     const projectLanguage = document.querySelector('.project-language');
     projectLanguage.innerHTML = `
       <li><a href="#">${workObject[i].languages[0]}</a></li>
       <li><a href="#">${workObject[i].languages[2]}</a></li>
       <li><a href="#">${workObject[i].languages[3]}</a></li>
-      `
+      `;
   });
 }
 
