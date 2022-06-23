@@ -689,3 +689,18 @@ textarea {
 .projectPopup .see img {
   width: 16px;
 }
+
+.erreur {
+  color: #d8000c;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.erreur.visible {
+  background-color: #ffd2d2;
+  padding: 10px;
+  border-radius: 30px;
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+}
