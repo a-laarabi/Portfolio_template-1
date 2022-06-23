@@ -166,6 +166,7 @@ h2 {
 
 .popup-info {
   display: flex;
+  flex-direction: column;
   align-items: start;
   justify-content: start;
   width: 100%;
@@ -178,6 +179,8 @@ h2 {
   margin: 0;
   padding: 0;
   margin-left: -5px;
+  max-height: 150px;
+  overflow: hidden;
 }
 
 .inside_popup-info {
@@ -185,7 +188,7 @@ h2 {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  padding-left: 20px;
+  order: 1;
 }
 
 .btn-group {
@@ -193,6 +196,8 @@ h2 {
   margin: 0;
   padding-left: -10px;
   align-self: start;
+  gap: 10px;
+  justify-content: center;
 }
 
 .inside_popup-info br {
@@ -251,6 +256,18 @@ h2 {
   background-color: #fff;
   border: 2px solid #396df2;
   margin-left: 16px;
+}
+
+.hrr {
+  width: 90%;
+  background-color: #ebecf0;
+  border: 0;
+  height: 2px;
+}
+
+.inside_popup-info .see {
+  margin-left: 0;
+  margin-top: -10px;
 }
 
 /* ### About Myself ### */
@@ -332,7 +349,7 @@ h2 {
 }
 
 hr {
-  margin: 20px 0;
+  margin: 15px 0;
   border: 1px solid #dfe1e6;
 }
 
@@ -458,6 +475,14 @@ textarea {
   }
 
   /* ### Work ### */
+  .info {
+    overflow: auto;
+  }
+
+  .popup-info {
+    flex-direction: row;
+  }
+
   .left {
     float: left;
   }
@@ -593,6 +618,11 @@ textarea {
   .projectPopup .info {
     width: 70%;
   }
+
+  .Inside-projectPopup {
+    max-height: 90%;
+    overflow: auto;
+  }
 }
 
 .menu-popup {
@@ -661,9 +691,10 @@ textarea {
   border: 1px solid #ebecf0;
   padding: 16px;
   background-color: #fff;
-  margin-top: 60%;
+  margin-top: 50px;
   padding-bottom: 20px;
   margin-bottom: 20px;
+  flex-direction: column;
 }
 
 .projectPopup .pic {
@@ -672,7 +703,7 @@ textarea {
 }
 
 .projectPopup .info {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
