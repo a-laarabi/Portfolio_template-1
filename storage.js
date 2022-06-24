@@ -11,7 +11,7 @@ function dataChange() {
   localStorage.setItem('formData', JSON.stringify(data));
 }
 
-document.addEventListener('putData', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const formValue = localStorage.getItem('formData');
 
   if (formValue) {
