@@ -201,7 +201,7 @@ h2 {
 }
 
 .inside_popup-info br {
-  width: 30px;
+  width: 1.9em;
   height: 50px;
 }
 
@@ -218,7 +218,7 @@ h2 {
 .project-language li {
   background-color: #ebebff;
   border-radius: 8px;
-  padding: 4px 12px;
+  padding: 5px 12px;
   color: #6070ff;
   margin: 4px;
 }
