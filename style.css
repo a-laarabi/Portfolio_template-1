@@ -203,7 +203,7 @@ h2 {
   height: 50px;
 }
 
-.buttons{
+.buttons {
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -478,7 +478,7 @@ textarea {
   .popup-info {
     flex-direction: row;
   }
-  
+
   .left {
     float: left;
   }
