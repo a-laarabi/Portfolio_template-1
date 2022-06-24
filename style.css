@@ -4,12 +4,17 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
 
 body {
   background-color: #e5e5e5;
+  font-family: "Poppins", sans-serif;
 }
 
 ul {
@@ -155,9 +160,63 @@ h2 {
 }
 
 .project-language {
-  margin: 10px 0;
+  margin: 10px;
   display: flex;
-  margin-left: 16px;
+}
+
+.popup-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+  height: auto;
+  padding: 10px 15px;
+  margin-left: 0;
+}
+
+.info {
+  margin: 0;
+  padding: 0;
+  margin-left: -5px;
+  max-height: 150px;
+  overflow: hidden;
+}
+
+.inside_popup-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  order: 1;
+}
+
+.btn-group {
+  display: flex;
+  margin: 0;
+  padding-left: -10px;
+  align-self: start;
+}
+
+.inside_popup-info br {
+  width: 30px;
+  height: 50px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.seperator {
+  width: 100%;
+  border: 1px solid #ebecf0;
+
+  /* height: 17px;
+  margin: 0;
+  padding: 0; */
+  color: #ebecf0;
 }
 
 .project-language li {
@@ -165,7 +224,7 @@ h2 {
   border-radius: 8px;
   padding: 4px 12px;
   color: #6070ff;
-  margin: 2px;
+  margin: 4px;
 }
 
 .canopy {
@@ -201,6 +260,10 @@ h2 {
   background-color: #fff;
   border: 2px solid #396df2;
   margin-left: 16px;
+}
+
+.inside_popup-info .see {
+  margin-left: 0;
 }
 
 /* ### About Myself ### */
@@ -408,6 +471,14 @@ textarea {
   }
 
   /* ### Work ### */
+  .info {
+    overflow: auto;
+  }
+
+  .popup-info {
+    flex-direction: row;
+  }
+
   .left {
     float: left;
   }
@@ -435,10 +506,12 @@ textarea {
 
   .canopy {
     font-size: 18px;
+    font-weight: 500;
   }
 
   .project_info {
     font-size: 18px;
+    font-weight: 400;
   }
 
   .work p {
@@ -522,6 +595,25 @@ textarea {
   textarea {
     border-radius: 0;
   }
+
+  /* ########## Project popup ########## */
+
+  .projectPopup .popup-info {
+    display: flex;
+    margin-top: 59px;
+  }
+
+  .projectPopup .button1 {
+    float: left;
+  }
+
+  .projectPopup .button2 {
+    float: right;
+  }
+
+  .projectPopup .info {
+    width: 70%;
+  }
 }
 
 .menu-popup {
@@ -561,4 +653,76 @@ textarea {
 
 .menu-popup.visible {
   display: block;
+}
+
+/* ########## Project popup ########## */
+
+.projectPopup {
+  background-color: rgba(193, 199, 208, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  overflow-y: scroll;
+}
+
+.projectPopup.visible {
+  display: flex;
+}
+
+.Inside-projectPopup {
+  width: 80%;
+  min-height: 90vh;
+  border-radius: 18px;
+  border: 1px solid #ebecf0;
+  padding: 16px;
+  background-color: #fff;
+  margin-top: 350px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.projectPopup .pic {
+  width: 100%;
+  height: auto;
+}
+
+.projectPopup .info {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.projectPopup .close {
+  width: 1.2rem;
+  float: right;
+  margin-right: 12px;
+}
+
+.projectPopup .see img {
+  width: 16px;
+}
+
+.erreur {
+  color: #d8000c;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.erreur.visible {
+  background-color: #ffd2d2;
+  padding: 10px;
+  border-radius: 30px;
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
 }
