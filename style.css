@@ -684,13 +684,13 @@ textarea {
   width: 16px;
 }
 
-.erreur {
+.error {
   color: #d8000c;
   font-size: 12px;
   font-weight: 500;
 }
 
-.erreur.visible {
+.error.visible {
   background-color: #ffd2d2;
   padding: 10px;
   border-radius: 30px;
