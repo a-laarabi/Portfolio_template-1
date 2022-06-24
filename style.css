@@ -375,6 +375,7 @@ textarea {
   border-style: none;
   border: 1px solid #cfd8dc;
   padding-left: 16px;
+  margin: 10px 0;
 }
 
 .name {
@@ -688,6 +689,7 @@ textarea {
   color: #d8000c;
   font-size: 12px;
   font-weight: 500;
+  padding: 10px;
 }
 
 .error.visible {
