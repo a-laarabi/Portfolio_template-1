@@ -203,10 +203,6 @@ h2 {
 .seperator {
   width: 100%;
   border: 1px solid #ebecf0;
-
-  /* height: 17px;
-  margin: 0;
-  padding: 0; */
   color: #ebecf0;
 }
 
@@ -344,8 +340,6 @@ hr {
   font-weight: 500;
   font-size: 20px;
 }
-
-/* ### Contact ### */
 
 .contact {
   clear: both;
