@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: mobile menu
+# Portfolio
 
 >In this project, I started putting the things I studied into the test
 >This project represents a portfolios projects.
@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://a-laarabi.github.io/Portfolio_Mobile-version/)
+[Live Demo Link](https://a-laarabi.github.io/Portfolio_Mobile-version/Old-portfolio/)
 
 ## Getting Started
 
@@ -42,4 +42,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENSE) licensed.
