@@ -16,3 +16,22 @@ for (let i = 0; i < link.length; i += 1) {
     menuPopup.classList.remove('visible');
   });
 }
+
+// ######## Error ########
+
+const submit = document.querySelector('.submit');
+
+submit.addEventListener('click', (event) => {
+  const mail = document.getElementById('mail').value;
+  const error = document.querySelector('.error');
+  error.classList.add('visible');
+  const isLowerCase = (str) => str === str.toLowerCase();
+  if (!isLowerCase(mail)) {
+    event.preventDefault();
+    error.innerHTML = 'email should be in lowercase';
+    setTimeout(() => {
+      error.innerHTML = '';
+      error.classList.remove('visible');
+    }, 6000);
+  }
+});

@@ -205,13 +205,15 @@ h2 {
   height: 50px;
 }
 
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
 .seperator {
   width: 100%;
   border: 1px solid #ebecf0;
-
-  /* height: 17px;
-  margin: 0;
-  padding: 0; */
   color: #ebecf0;
 }
 
@@ -362,8 +364,6 @@ hr {
   font-size: 20px;
 }
 
-/* ### Contact ### */
-
 .contact {
   clear: both;
   background-color: #6070ff;
@@ -398,6 +398,7 @@ textarea {
   border-style: none;
   border: 1px solid #cfd8dc;
   padding-left: 16px;
+  margin: 10px 0;
 }
 
 .name {
@@ -719,4 +720,20 @@ textarea {
 
 .projectPopup .see img {
   width: 16px;
+}
+
+.error {
+  color: #d8000c;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.error.visible {
+  background-color: #ffd2d2;
+  padding: 10px;
+  border-radius: 30px;
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
 }
