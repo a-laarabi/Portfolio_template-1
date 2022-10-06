@@ -21,17 +21,17 @@ for (let i = 0; i < link.length; i += 1) {
 
 const submit = document.querySelector('.submit');
 
-submit.addEventListener('click', (error) => {
+submit.addEventListener('click', (event) => {
   const mail = document.getElementById('mail').value;
-  const erreur = document.querySelector('.erreur');
-  erreur.classList.add('visible');
+  const error = document.querySelector('.error');
+  error.classList.add('visible');
   const isLowerCase = (str) => str === str.toLowerCase();
   if (!isLowerCase(mail)) {
-    error.preventDefault();
-    erreur.innerHTML = 'email should be in lowercase';
+    event.preventDefault();
+    error.innerHTML = 'email should be in lowercase';
     setTimeout(() => {
-      erreur.innerHTML = '';
-      erreur.classList.remove('visible');
+      error.innerHTML = '';
+      error.classList.remove('visible');
     }, 6000);
   }
 });
